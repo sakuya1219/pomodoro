@@ -15,7 +15,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './'
+  base: './',
   plugins: [
     VitePWA({
       // 設定快取自動更新

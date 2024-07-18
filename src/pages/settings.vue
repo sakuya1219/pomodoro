@@ -1,11 +1,11 @@
 <template>
-  <v-container class="bg-deep-purple-lighten-2">
+  <v-container>
     <v-row>
       <v-col cols="12">
         <h1 class="text-center">鈴聲設定</h1>
       </v-col>
       <v-col cols="12">
-        <v-table class="bg-deep-purple-lighten-4">
+        <v-table>
           <thead>
             <tr>
               <th>名稱</th>
@@ -33,18 +33,18 @@
 </template>
 
 <script setup>
-import { definePage } from "vue-router/auto";
-import { useSettingsStore } from "@/stores/settings";
-import { storeToRefs } from "pinia";
+import { definePage } from 'vue-router/auto'
+import { useSettingsStore } from '@/stores/settings'
+import { storeToRefs } from 'pinia'
 
 definePage({
   meta: {
-    title: "番茄鐘 | 設定",
-  },
-});
+    title: '番茄鐘 | 設定'
+  }
+})
 
-const settings = useSettingsStore();
-const { alarms, selectedAlarm } = storeToRefs(settings);
+const settings = useSettingsStore()
+const { alarms, selectedAlarm } = storeToRefs(settings)
 </script>
 
 <style scoped lang="scss">

@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="bg-deep-purple-darken-4">
     <v-app-bar>
       <v-container class="d-flex align-center">
         <v-app-bar-title>番茄鐘</v-app-bar-title>
